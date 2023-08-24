@@ -1,4 +1,4 @@
-# Template-Ecommerce-Euphoria
+# Template Euphoria - Ecommerce
 
 ## Requirements
 - Node.js
