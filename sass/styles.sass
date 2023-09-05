@@ -1,5 +1,7 @@
 @use 'variables'
 @use 'mixins'
+@import 'header'
+@import 'media'
 
 @font-face
   font-family: 'Causten-Bold'
@@ -31,96 +33,6 @@
   margin: 0
   box-sizing: border-box
 
-header
-  border-bottom: 0.0625rem solid #BEBCBD
-  
-  .header-content
-    display: flex
-    justify-content: space-between
-    @include mixins.container
-
-
-    img
-      width: 5.84rem
-
-    nav
-      
-      ul
-        list-style: none
-        height: 100%
-        @include mixins.flex-center
-
-        li
-          
-          font-size: 1.375rem
-
-          a
-            margin: 0 1.3rem
-            color: variables.$primary-color
-            text-decoration: none
-            transition: .6s
-
-            &:hover
-              font-family: 'Causten-Bold'
-              color: variables.$secondary-color
-
-          .active
-            font-family: 'Causten-Bold'
-            color: variables.$secondary-color
-    
-    .searchbar
-      .input-field
-        background-color: variables.$btn-color
-        height: 100%
-        display: flex
-        align-items: center
-        width: 18rem
-        border-radius: 0.5rem
-        padding: 0 0 0 1.5rem
-
-        .search-btn
-          padding: 0 0.926875rem 0 0
-
-        .search-input
-          flex: 1
-          height: 70%
-          font-family: 'Causten-Regular'
-          color: variables.$primary-color
-          font-size: 1rem
-          border: none
-          outline: none
-          background-color: #00000000
-
-          &::placeholder
-            font-family: 'Causten-Light'
-            font-size: 1rem
-          
-
-        
-    .misc-btns
-      
-      @include mixins.flex-center
-
-      .fav-btn
-        @include mixins.btn-bg
-        &:hover
-          background-color: variables.$secondary-color
-          #fav-btn
-            stroke: #ff0000
-
-      .account-btn
-        @include mixins.btn-bg
-        &:hover
-          background-color: variables.$secondary-color
-          #account-btn
-            stroke: #1eff1e
-
-      .cart-btn
-        @include mixins.btn-bg
-        &:hover
-          background-color: variables.$secondary-color
-          #cart-btn
-            stroke: #ff782b
           
 
 
