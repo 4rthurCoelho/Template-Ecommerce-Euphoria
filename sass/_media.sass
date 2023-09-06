@@ -7,27 +7,64 @@
             margin-left: 80%
 
         .header-content
+            margin-left: 130%
             align-items: center
-            padding: 1em
+            padding: 2% !important
             position: absolute
             flex-direction: column
             top: 0
             background-color: white
             height: 111vh
-            width: 30%
+            width: 29.5vw
             animation-duration: 1s
-            margin-left: 130%
             z-index: 2
+            overflow: hidden
             .res-icon-close
                 display: block
             ul
                 flex-direction: column
             .searchbar
-                margin-left: 20%
+                //margin-right: 10% !important
+                //margin-left: 10%
+                max-width: 100%
                 height: 8%
                              
             .misc-btns
-                margin-bottom: 130%
+                margin-bottom: 28em
+
+@media (max-width: 720px)
+    header
+        
+        .header-content
+            
+            //width: 50vw
+            .misc-btns
+                flex-direction: column
+                margin-bottom: 22em
+                a
+                    margin-bottom: 1em
+
+@media (max-width: 475px)
+    header
+        
+        .header-content
+            
+            .searchbar
+                .search-btn
+                    padding: .7em 1.5em 0 0 !important
+                .input-field
+                    flex-direction: column
+                .search-input
+                    width: 4.5em
+                    padding: 0 0 0 0
+                    margin: 0 0 0 0
+                    &::placeholder
+                        
+
+@media (min-width: 981px)
+    header
+        .header-content
+            margin-left: 0 !important                
                 
 
 
