@@ -1,0 +1,100 @@
+.hero-slider
+    position: relative
+    .slider-container .slide
+            min-height: 100vh
+            display: flex
+            align-items: center
+            flex-wrap: wrap
+            gap: 15px
+            padding-left: 20%
+            padding-bottom: 70px
+            .slide-content
+                display: flex
+                flex-direction: column
+                justify-content: space-around
+                align-items: flex-start
+                flex: 1 1 350px
+                animation: slideContent 1s linear 0.4s backwards
+                h5
+                    color: #fff
+                    font-size: 32px
+                    margin-bottom: 23px
+                h1
+                    color: #fff
+                    font-size: 78px
+                    margin-bottom: 28px
+                    font-family: 'Causten-Bold'
+                h4
+                    color: #fff
+                    font-size: 32px
+                    margin-bottom: 46px
+                .slider-btn
+                    text-decoration: none
+                    background-color: #fff
+                    padding: 0.5em 1.8em
+                    color: #000
+                    font-size: 24px
+                    border-radius: 6px
+                    transition: .3s
+                    &:hover
+                        background-color: variables.$secondary-color
+                        color: #fff
+.slider-container
+    display: none
+
+    &.active
+      display: block
+
+    &:nth-child(1) .slide
+      background: url(/img/Banner.png)
+      background-size: cover
+      background-repeat: no-repeat
+      width: 100vw
+      animation: fadeBackground 2s ease-in-out forwards
+    
+    &:nth-child(2) .slide
+      background: url(/img/Banner.png)
+      background-size: cover
+      background-repeat: no-repeat
+      width: 100vw
+      animation: fadeBackground 2s ease-in-out forwards
+
+    &:nth-child(3) .slide
+      background: url(/img/Banner.png)
+      background-size: cover
+      background-repeat: no-repeat
+      width: 100vw
+      animation: fadeBackground 2s ease-in-out forwards
+
+#prev, #next
+    position: absolute
+    top: 38%
+    transform: translateY(-50%)
+    height: 50px
+    width: 50px
+    line-height: 50px
+    font-size: 25px
+    text-align: center
+    cursor: pointer
+    font-weight: bolder
+    svg
+        transform: scale(1.2)
+
+#next
+    right: 20px
+
+@keyframes slideContent
+  0%
+    opacity: 0
+    transform: translateX(-50px)
+
+@keyframes fadeBackground
+  0%
+    opacity: 0
+
+  100%
+    opacity: 1
+
+    
+            
+
