@@ -3,11 +3,30 @@
     padding-top: 5%
     display: flex
     justify-content: center
-    
-    .cards-container-1    
+
+    .cards-container-1
         .card
             width: 97%
         @include mixins.card-style
-        
+
     .cards-container-2
         @include mixins.card-style
+
+@media (max-width: 768px)
+    .deals
+        padding-top: 5%
+        flex-direction: column
+        align-items: center
+        justify-content: center
+
+        .cards-container-1
+            padding-bottom: 6vw
+            .card
+                max-width: 97%
+            @include mixins.card-style-mobile
+
+        .cards-container-2
+            .card
+                max-width: 97%
+            @include mixins.card-style-mobile
+

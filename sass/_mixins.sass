@@ -32,7 +32,7 @@
         border-radius: 18px
         box-shadow: 2px 2px 10px #00000054
         .info
-            max-width: 25%
+            max-width: 25vw  // 25% da largura da tela
             display: flex
             flex-direction: column
             align-items: flex-start
@@ -42,22 +42,22 @@
             
             h6
                 font-family: 'Causten-Bold'
-                font-size: 20px
+                font-size: 1.5vw
                 color: white
                 padding-bottom: 8%
             h2
                 font-family: 'Causten-Bold'
-                font-size: 45px
+                font-size: 3vw
                 color: white
                 padding-bottom: 3%
             h3
                 font-family: 'Causten-Light'
-                font-size: 20px
+                font-size: 1.5vw
                 color: white
                 padding-bottom: 8%
             .card-btn
                 font-family: 'Causten-Bold'
-                font-size: 25px
+                font-size: 1.6vw
                 padding: 0
                 color: white
                 background: none
@@ -65,9 +65,51 @@
                 cursor: pointer
                 text-decoration: underline
         img
-            width: 103%
-            height: 103%
-            
+            width: 103%  // 103% da largura da tela
+            height: 103%  // 103% da largura da tela */
+
+@mixin card-style-mobile
+    .card
+        height: 100%
+        overflow: hidden
+        border-radius: 18px
+        box-shadow: 2px 2px 10px #00000054
+        .info
+            max-width: 45vw // 25% da largura da tela
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            padding: 6% 0% 0% 6%
+            position: absolute
+            justify-content: space-around
+
+            h6
+                font-family: 'Causten-Bold'
+                font-size: 3.6vw
+                color: white
+                padding-bottom: 12%
+            h2
+                font-family: 'Causten-Bold'
+                font-size: 5vw
+                color: white
+                padding-bottom: 5%
+            h3
+                font-family: 'Causten-Light'
+                font-size: 3.5vw
+                color: white
+                padding-bottom: 14%
+            .card-btn
+                font-family: 'Causten-Bold'
+                font-size: 3.6vw
+                padding: 0
+                color: white
+                background: none
+                border: none
+                cursor: pointer
+                text-decoration: underline
+        img
+        width: 103% // 103% da largura da tela
+        height: 103% // 103% da largura da tela
 
 @mixin mobile
     @media(max-width: 425px)
