@@ -1,32 +1,39 @@
-var header = document.getElementById('header');
-var headerContent = document.getElementById('header-content');
-var main = document.getElementById('main');
-var showSidebar = false;
+const header = $('#header');
+const headerContent = $('#header-content');
+const main = $('#main');
+let showSidebar = false;
 
 function toggleSidebar(){
     showSidebar = !showSidebar;
     if(showSidebar){
-        headerContent.style.marginLeft = '70%';
-        headerContent.style.animationName = 'showSidebar';
-        main.style.filter = 'blur(2px) brightness(0.7)';
+        headerContent.css({
+            'marginLeft': '70%',
+            'animationName': 'showSidebar'
+        });
+        main.css({
+            'filter': 'blur(2px) brightness(0.7)'
+        });
     }
     else{
-        headerContent.style.marginLeft = '130%';
-        headerContent.style.animationName = 'closeSidebar';
-        main.style.filter = '';
+        headerContent.css({
+            'marginLeft': '130%',
+            'animationName': 'closeSidebar'
+        });
+        main.css({
+            'filter': ''
+        });
     }
 }
 
 function closeSidebar(){
-    if(showSidebar)
-    {
+    if(showSidebar) {
         toggleSidebar();
     }
 }
 
-window.addEventListener('resize', function(event) {
-    if(window.innerWidth > 980 && showSidebar) 
-    {  
+const handleResize = () => {
+    const { innerWidth } = window;
+    if (innerWidth > 980 && showSidebar) {
         toggleSidebar();
     }
-});
+};
