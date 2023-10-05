@@ -5,23 +5,14 @@ let showSidebar = false;
 
 function toggleSidebar(){
     showSidebar = !showSidebar;
-    if(showSidebar){
-        headerContent.css({
-            'marginLeft': '70%',
-            'animationName': 'showSidebar'
-        });
-        main.css({
-            'filter': 'blur(2px) brightness(0.7)'
-        });
-    }
-    else{
-        headerContent.css({
-            'marginLeft': '130%',
-            'animationName': 'closeSidebar'
-        });
-        main.css({
-            'filter': ''
-        });
+    if (showSidebar) {
+        headerContent.removeClass('closeSidebar');
+        headerContent.addClass('showSidebar');
+        main.addClass('sidebarOpen');
+    } else {
+        headerContent.removeClass('showSidebar');
+        headerContent.addClass('closeSidebar');
+        main.removeClass('sidebarOpen');
     }
 }
 
