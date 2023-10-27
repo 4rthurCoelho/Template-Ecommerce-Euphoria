@@ -1,3 +1,6 @@
+$tablet-width: 768px
+$mobile-width: 576px
+    
 .men-section-title
     margin-top: 5%
     padding-left: 10%
@@ -50,3 +53,32 @@
                     font-size: 1.1vw
         .arrow-btn
             cursor: pointer
+
+@media screen and (max-width: $tablet-width)
+    .men-section-title
+        &::before
+            width: .8vw
+
+    .for-men
+        flex-direction: column
+        .product
+            width: 100% 
+            .img-container
+                width: 100%
+
+            .product-info
+                display: flex
+                padding-top: 10%
+                justify-content: space-between
+                align-items: center
+                width: 100%
+                margin-bottom: 5%
+                .product-text
+                    .product-categorie
+                        color: variables.$secondary-color
+                        font-family: 'Causten-Bold'
+                        font-size: 3.2vw
+                    .product-note
+                        color: variables.$primary-color
+                        font-family: 'Causten-Medium'
+                        font-size: 3.1vw
