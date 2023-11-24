@@ -49,10 +49,114 @@
         </div>        
     </header>
 
-   <div tabindex="0" onclick="closeSidebar()" class="main" id="main">
-        <h1>Teste :)</h1>
-    </div>
-    
+    <main class="main">
+        <section class="hero-slider">
+            <div class="slider-container active">
+                <div class="slide">
+                    <div class="slide-content">
+                        <h5>T-Shirt / Tops</h5>
+                        <h1>Summer<br>Value Pack 1</h1>
+                        <h4>cool / colorful / comfy</h4>
+                        <a href="#" class="slider-btn">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-container">
+                <div class="slide">
+                    <div class="slide-content">
+                        <h5>T-Shirt / Tops</h5>
+                        <h1>Summer<br>Value Pack 2</h1>
+                        <h4>cool / colorful / comfy</h4>
+                        <a href="#" class="slider-btn">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-container">
+                <div class="slide">
+                    <div class="slide-content">
+                        <h5>T-Shirt / Tops</h5>
+                        <h1>Summer<br>Value Pack 3</h1>
+                        <h4>cool / colorful / comfy</h4>
+                        <a href="#" class="slider-btn">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="prev" onclick="prev()"><svg width="24" height="45" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.4992 43.7723C23.3409 43.9302 23.1528 44.0554 22.9457 44.1408C22.7386 44.2263 22.5166 44.2702 22.2924 44.2702C22.0682 44.2702 21.8462 44.2263 21.6391 44.1408C21.432 44.0554 21.2439 43.9302 21.0856 43.7723L0.631046 23.4352C0.472307 23.2778 0.346367 23.0907 0.260435 22.8848C0.174505 22.6789 0.130272 22.4582 0.130272 22.2353C0.130272 22.0124 0.174505 21.7916 0.260435 21.5857C0.346367 21.3799 0.472307 21.1928 0.631046 21.0354L21.0856 0.698246C21.4057 0.380012 21.8398 0.201233 22.2924 0.201233C22.7451 0.201233 23.1792 0.380012 23.4992 0.698246C23.8193 1.01648 23.9991 1.44809 23.9991 1.89814C23.9991 2.34818 23.8193 2.7798 23.4992 3.09803L4.24809 22.2353L23.4992 41.3726C23.658 41.53 23.7839 41.717 23.8698 41.9229C23.9558 42.1288 24 42.3495 24 42.5725C24 42.7954 23.9558 43.0161 23.8698 43.222C23.7839 43.4279 23.658 43.6149 23.4992 43.7723Z" fill="white"/></svg></div>
+            <div id="next" onclick="next()"><svg width="24" height="45" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.565959 0.698249C0.724296 0.540421 0.912395 0.415202 1.11948 0.329764C1.32657 0.244327 1.54857 0.200348 1.77278 0.200348C1.99698 0.200348 2.21899 0.244327 2.42607 0.329764C2.63316 0.415202 2.82126 0.540421 2.9796 0.698249L23.4341 21.0354C23.5929 21.1928 23.7188 21.3799 23.8048 21.5858C23.8907 21.7917 23.9349 22.0124 23.9349 22.2353C23.9349 22.4582 23.8907 22.6789 23.8048 22.8848C23.7188 23.0907 23.5929 23.2778 23.4341 23.4352L2.9796 43.7724C2.65953 44.0906 2.22542 44.2694 1.77278 44.2694C1.32013 44.2694 0.886027 44.0906 0.565959 43.7724C0.245891 43.4541 0.066078 43.0225 0.066078 42.5725C0.066078 42.1224 0.245891 41.6908 0.565959 41.3726L19.8171 22.2353L0.565959 3.09803C0.407221 2.9406 0.281279 2.75359 0.195347 2.54769C0.109416 2.34179 0.0651855 2.12106 0.0651855 1.89814C0.0651855 1.67522 0.109416 1.45449 0.195347 1.24859C0.281279 1.0427 0.407221 0.855677 0.565959 0.698249Z" fill="white"/></svg></div>
+        </section>
+        <h1 class="products-section-title">In The Limeligth</h3>
+        <section class="products-container">
+            <div class="product">
+                <div class="img-container">
+                    <div class="product-btns">
+                        <a href="#"><div class="fav-btn"><svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="fav-btn" fill-rule="evenodd" clip-rule="evenodd" d="M8.99486 2.93014C7.49535 1.18262 4.99481 0.712545 3.11602 2.31275C1.23723 3.91295 0.972726 6.5884 2.44815 8.48096C3.67486 10.0545 7.38733 13.3732 8.60407 14.4474C8.7402 14.5675 8.80827 14.6276 8.88766 14.6512C8.95695 14.6718 9.03277 14.6718 9.10207 14.6512C9.18146 14.6276 9.24952 14.5675 9.38565 14.4474C10.6024 13.3732 14.3149 10.0545 15.5416 8.48096C17.017 6.5884 16.7848 3.89611 14.8737 2.31275C12.9626 0.729378 10.4944 1.18262 8.99486 2.93014Z" stroke="#807D7E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></a>
+                        <a href="#"><div class="cart-btn"><svg width="17"  height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="cart-btn" d="M1.5 1.33334H2.00526C2.85578 1.33334 3.56986 1.97376 3.6621 2.81926L4.3379 9.01409C4.43014 9.85959 5.14422 10.5 5.99474 10.5H13.205C13.9669 10.5 14.6317 9.98341 14.82 9.24519L15.9699 4.73593C16.2387 3.68213 15.4425 2.65742 14.355 2.65742H4.5M4.52063 13.5208H5.14563M4.52063 14.1458H5.14563M13.6873 13.5208H14.3123M13.6873 14.1458H14.3123M5.66667 13.8333C5.66667 14.2936 5.29357 14.6667 4.83333 14.6667C4.3731 14.6667 4 14.2936 4 13.8333C4 13.3731 4.3731 13 4.83333 13C5.29357 13 5.66667 13.3731 5.66667 13.8333ZM14.8333 13.8333C14.8333 14.2936 14.4602 14.6667 14 14.6667C13.5398 14.6667 13.1667 14.2936 13.1667 13.8333C13.1667 13.3731 13.5398 13 14 13C14.4602 13 14.8333 13.3731 14.8333 13.8333Z" stroke="#807D7E" stroke-width="1.5" stroke-linecap="round"/></svg></div></a>
+                    </div>
+                    <img src="img/product-photo-1.png" alt="">
+                </div>
+                <div class="product-info">
+                    <div class="product-text">
+                        <p class="product-name">Black Sweatshirt</p>
+                        <p class="product-brand">Jhanvi's Brand</p>
+                    </div>
+                    <p class="product-price">$123.00</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img-container">
+                    <div class="product-btns">
+                        <a href="#"><div class="fav-btn"><svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="fav-btn" fill-rule="evenodd" clip-rule="evenodd" d="M8.99486 2.93014C7.49535 1.18262 4.99481 0.712545 3.11602 2.31275C1.23723 3.91295 0.972726 6.5884 2.44815 8.48096C3.67486 10.0545 7.38733 13.3732 8.60407 14.4474C8.7402 14.5675 8.80827 14.6276 8.88766 14.6512C8.95695 14.6718 9.03277 14.6718 9.10207 14.6512C9.18146 14.6276 9.24952 14.5675 9.38565 14.4474C10.6024 13.3732 14.3149 10.0545 15.5416 8.48096C17.017 6.5884 16.7848 3.89611 14.8737 2.31275C12.9626 0.729378 10.4944 1.18262 8.99486 2.93014Z" stroke="#807D7E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></a>
+                        <a href="#"><div class="cart-btn"><svg width="17"  height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="cart-btn" d="M1.5 1.33334H2.00526C2.85578 1.33334 3.56986 1.97376 3.6621 2.81926L4.3379 9.01409C4.43014 9.85959 5.14422 10.5 5.99474 10.5H13.205C13.9669 10.5 14.6317 9.98341 14.82 9.24519L15.9699 4.73593C16.2387 3.68213 15.4425 2.65742 14.355 2.65742H4.5M4.52063 13.5208H5.14563M4.52063 14.1458H5.14563M13.6873 13.5208H14.3123M13.6873 14.1458H14.3123M5.66667 13.8333C5.66667 14.2936 5.29357 14.6667 4.83333 14.6667C4.3731 14.6667 4 14.2936 4 13.8333C4 13.3731 4.3731 13 4.83333 13C5.29357 13 5.66667 13.3731 5.66667 13.8333ZM14.8333 13.8333C14.8333 14.2936 14.4602 14.6667 14 14.6667C13.5398 14.6667 13.1667 14.2936 13.1667 13.8333C13.1667 13.3731 13.5398 13 14 13C14.4602 13 14.8333 13.3731 14.8333 13.8333Z" stroke="#807D7E" stroke-width="1.5" stroke-linecap="round"/></svg></div></a>
+                    </div>
+                    <img src="img/product-photo-2.png" alt="">
+                </div>
+                <div class="product-info">
+                    <div class="product-text">
+                        <p class="product-name">Black Sweatshirt</p>
+                        <p class="product-brand">Jhanvi's Brand</p>
+                    </div>
+                    <p class="product-price">$123.00</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img-container">
+                    <div class="product-btns">
+                        <a href="#"><div class="fav-btn"><svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="fav-btn" fill-rule="evenodd" clip-rule="evenodd" d="M8.99486 2.93014C7.49535 1.18262 4.99481 0.712545 3.11602 2.31275C1.23723 3.91295 0.972726 6.5884 2.44815 8.48096C3.67486 10.0545 7.38733 13.3732 8.60407 14.4474C8.7402 14.5675 8.80827 14.6276 8.88766 14.6512C8.95695 14.6718 9.03277 14.6718 9.10207 14.6512C9.18146 14.6276 9.24952 14.5675 9.38565 14.4474C10.6024 13.3732 14.3149 10.0545 15.5416 8.48096C17.017 6.5884 16.7848 3.89611 14.8737 2.31275C12.9626 0.729378 10.4944 1.18262 8.99486 2.93014Z" stroke="#807D7E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></a>
+                        <a href="#"><div class="cart-btn"><svg width="17"  height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="cart-btn" d="M1.5 1.33334H2.00526C2.85578 1.33334 3.56986 1.97376 3.6621 2.81926L4.3379 9.01409C4.43014 9.85959 5.14422 10.5 5.99474 10.5H13.205C13.9669 10.5 14.6317 9.98341 14.82 9.24519L15.9699 4.73593C16.2387 3.68213 15.4425 2.65742 14.355 2.65742H4.5M4.52063 13.5208H5.14563M4.52063 14.1458H5.14563M13.6873 13.5208H14.3123M13.6873 14.1458H14.3123M5.66667 13.8333C5.66667 14.2936 5.29357 14.6667 4.83333 14.6667C4.3731 14.6667 4 14.2936 4 13.8333C4 13.3731 4.3731 13 4.83333 13C5.29357 13 5.66667 13.3731 5.66667 13.8333ZM14.8333 13.8333C14.8333 14.2936 14.4602 14.6667 14 14.6667C13.5398 14.6667 13.1667 14.2936 13.1667 13.8333C13.1667 13.3731 13.5398 13 14 13C14.4602 13 14.8333 13.3731 14.8333 13.8333Z" stroke="#807D7E" stroke-width="1.5" stroke-linecap="round"/></svg></div></a>
+                    </div>
+                    <img src="img/product-photo-3.png" alt="">
+                </div>
+                <div class="product-info">
+                    <div class="product-text">
+                        <p class="product-name">Black Sweatshirt</p>
+                        <p class="product-brand">Jhanvi's Brand</p>
+                    </div>
+                    <p class="product-price">$123.00</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img-container">
+                    <div class="product-btns">
+                        <a href="#"><div class="fav-btn"><svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="fav-btn" fill-rule="evenodd" clip-rule="evenodd" d="M8.99486 2.93014C7.49535 1.18262 4.99481 0.712545 3.11602 2.31275C1.23723 3.91295 0.972726 6.5884 2.44815 8.48096C3.67486 10.0545 7.38733 13.3732 8.60407 14.4474C8.7402 14.5675 8.80827 14.6276 8.88766 14.6512C8.95695 14.6718 9.03277 14.6718 9.10207 14.6512C9.18146 14.6276 9.24952 14.5675 9.38565 14.4474C10.6024 13.3732 14.3149 10.0545 15.5416 8.48096C17.017 6.5884 16.7848 3.89611 14.8737 2.31275C12.9626 0.729378 10.4944 1.18262 8.99486 2.93014Z" stroke="#807D7E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></a>
+                        <a href="#"><div class="cart-btn"><svg width="17"  height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="cart-btn" d="M1.5 1.33334H2.00526C2.85578 1.33334 3.56986 1.97376 3.6621 2.81926L4.3379 9.01409C4.43014 9.85959 5.14422 10.5 5.99474 10.5H13.205C13.9669 10.5 14.6317 9.98341 14.82 9.24519L15.9699 4.73593C16.2387 3.68213 15.4425 2.65742 14.355 2.65742H4.5M4.52063 13.5208H5.14563M4.52063 14.1458H5.14563M13.6873 13.5208H14.3123M13.6873 14.1458H14.3123M5.66667 13.8333C5.66667 14.2936 5.29357 14.6667 4.83333 14.6667C4.3731 14.6667 4 14.2936 4 13.8333C4 13.3731 4.3731 13 4.83333 13C5.29357 13 5.66667 13.3731 5.66667 13.8333ZM14.8333 13.8333C14.8333 14.2936 14.4602 14.6667 14 14.6667C13.5398 14.6667 13.1667 14.2936 13.1667 13.8333C13.1667 13.3731 13.5398 13 14 13C14.4602 13 14.8333 13.3731 14.8333 13.8333Z" stroke="#807D7E" stroke-width="1.5" stroke-linecap="round"/></svg></div></a>
+                    </div>
+                    <img src="img/product-photo-4.png" alt="">
+                </div>
+                <div class="product-info">
+                    <div class="product-text">
+                        <p class="product-name">Black Sweatshirt</p>
+                        <p class="product-brand">Jhanvi's Brand</p>
+                    </div>
+                    <p class="product-price">$123.00</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/banner.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
