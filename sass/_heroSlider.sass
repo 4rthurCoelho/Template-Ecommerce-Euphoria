@@ -1,13 +1,14 @@
 .hero-slider
     position: relative
     .slider-container .slide
-            min-height: 100vh
+            min-height: auto
             display: flex
             align-items: center
             flex-wrap: wrap
             gap: 15px
             padding-left: 20%
-            padding-bottom: 70px
+            padding-bottom: 10%
+            padding-top: 10%
             .slide-content
                 display: flex
                 flex-direction: column
@@ -37,7 +38,7 @@
                     border-radius: 6px
                     transition: .3s
                     &:hover
-                        background-color: variables.$secondary-color
+                        background-color: variables.$detail-color
                         color: #fff
 .slider-container
     display: none
@@ -97,4 +98,73 @@
 
     
             
+@media(max-width: 980px)
 
+  .containerproje #prev
+    left: 0px
+    top: 60%
+  
+  .containerproje #next
+    right: 0px
+    top: 60%
+
+  .slider-container
+    display: none
+
+    &.active
+      display: block
+
+    &:nth-child(1) .slide
+      background: url(/img/banner-980.png)
+      background-size: cover
+    
+    &:nth-child(2) .slide
+      background: url(/img/banner-980.png)
+      background-size: cover
+
+
+    &:nth-child(3) .slide
+      background: url(/img/banner-980.png)
+      background-size: cover
+    
+  #prev, #next
+    top: 30%
+
+@media(max-width: 650px)
+  .hero-slider
+    position: relative
+    .slider-container .slide
+            min-height: auto
+            padding-top: 30%
+            padding-bottom: 30%
+            .slide-content
+
+                h5
+                    font-size: 22px
+                    margin-bottom: 23px
+                h1
+                    font-size: 68px
+                    margin-bottom: 28px
+
+                h4
+                    font-size: 22px
+                    margin-bottom: 46px
+                .slider-btn
+                    font-size: 20px
+  .slider-container
+    display: none
+
+    &.active
+      display: block
+
+    &:nth-child(1) .slide
+      background: url(/img/banner-650.png)
+      background-size: cover
+    
+    &:nth-child(2) .slide
+      background: url(/img/banner-650.png)
+      background-size: cover
+
+    &:nth-child(3) .slide
+      background: url(/img/banner-650.png)
+      background-size: cover
